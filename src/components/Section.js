@@ -1,18 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 function Section() {
   return (
     <Wrap>
-      <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1>Model S</h1>
+          <p>Order Online for Touchless Delivery</p>
+        </ItemText>
+      </Fade>
       <Buttons>
-        <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
-        </ButtonGroup>
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>Custom Order</LeftButton>
+            <RightButton>Existing Inventory</RightButton>
+          </ButtonGroup>
+        </Fade>
         <DownArrow src="./images/down-arrow.svg" />
       </Buttons>
     </Wrap>
@@ -35,7 +40,7 @@ const Wrap = styled.div`
 `;
 
 const ItemText = styled.div`
-  padding-top: 10vh;
+  padding-top: 15vh;
   text-align: center;
 `;
 
